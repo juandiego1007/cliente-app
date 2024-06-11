@@ -1,0 +1,37 @@
+<div *ngIf="cliente" class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow">
+      <div class="card-body">
+        <h2 class="card-title">Información Básica</h2>
+        <div class="form-group">
+          <label for="primerApellido">Primer Apellido</label>
+          <input id="primerApellido" class="form-control" type="text" [value]="cliente.primerApellido" readonly>
+        </div>
+        <div class="form-group mt-3">
+          <label for="segundoApellido">Segundo Apellido</label>
+          <input id="segundoApellido" class="form-control" type="text" [value]="cliente.segundoApellido" readonly>
+        </div>
+        <div class="form-group mt-3">
+          <label for="primerNombre">Primer Nombre</label>
+          <input id="primerNombre" class="form-control" type="text" [value]="cliente.primerNombre" readonly>
+        </div>
+        <div class="form-group mt-3">
+          <label for="segundoNombre">Segundo Nombre</label>
+          <input id="segundoNombre" class="form-control" type="text" [value]="cliente.segundoNombre" readonly>
+        </div>
+        <div class="form-group mt-3">
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" class="form-control" type="text" [value]="cliente.telefono" readonly>
+        </div>
+        <div class="form-group mt-3">
+          <label for="direccion">Dirección</label>
+          <input id="direccion" class="form-control" type="text" [value]="cliente.direccion" readonly>
+        </div>
+        <div class="form-group mt-3">
+          <label for="ciudadResidencia">Ciudad</label>
+          <input id="ciudadResidencia" class="form-control" type="text" [value]="cliente.ciudadResidencia.nombre" readonly>
+        </div>
+        <button class="btn btn-secondary mt-4" (click)="regresar()">Regresar</button>
+      </div>
+    </div>
+</div>
+  
